@@ -1,0 +1,36 @@
+<!-- 
+    Définition :
+    L'attribut "tabindex" permet de contrôler l'ordre de navigation au clavier (touche TAB) sur les éléments interactifs ou non.
+    Il améliore l'accessibilité pour les utilisateurs qui naviguent au clavier.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabIndex en HTML</title>
+</head>
+<body>
+    
+    <!-- Exemple avec tabindex -->
+    <h1 tabindex="1">Je suis un titre</h1>
+
+    <p tabindex="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi numquam iste fuga labore in ullam !</p>
+
+    <button tabindex="3">Bouton 1</button>
+    <button tabindex="4">Bouton 2</button>
+    <button tabindex="5">Bouton 3</button>
+
+    <!-- Exemple d'élément ignoré dans le focus clavier -->
+    <button tabindex="-1">Ignoré par le tab</button>
+
+    <!-- 
+        Explications :
+        tabindex="1" (ou tout autre nombre positif) : Définit l'ordre de tabulation.
+        tabindex="0" : L'élément sera atteignable via TAB dans l'ordre naturel du document.
+        tabindex="-1" : L'élément est ignoré du cycle de tabulation mais peut être focus via JavaScript.
+    -->
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!-- 
+    Définition : 
+    Les tableaux permettent de structurer des données sous forme de lignes et de colonnes.
+    Ils sont très utilisés pour présenter des informations de manière organisée.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux en HTML</title>
+</head>
+<body>
+
+    <!-- Exemple de tableau basique structuré -->
+    <table border="1" cellspacing="0" cellpadding="10">
+        <caption>Titre du Tableau</caption> <!-- Titre du tableau -->
+        
+        <!-- En-tête du tableau -->
+        <thead>
+            <tr>
+                <th>Colonne 1</th>
+                <th>Colonne 2</th>
+                <th>Colonne 3</th>
+            </tr>
+        </thead>
+
+        <!-- Corps du tableau -->
+        <tbody>
+            <tr>
+                <td>Ligne 1, Colonne 1</td>
+                <td>Ligne 1, Colonne 2</td>
+                <td>Ligne 1, Colonne 3</td>
+            </tr>
+            <tr>
+                <td>Ligne 2, Colonne 1</td>
+                <td>Ligne 2, Colonne 2</td>
+                <td>Ligne 2, Colonne 3</td>
+            </tr>
+        </tbody>
+
+        <!-- Pied de tableau -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <!-- Exemple de tableau avec fusion de cellules -->
+    <table border="1" cellspacing="0" cellpadding="10">
+        <caption>Exemple avec colspan et rowspan</caption>
+
+        <tr>
+            <!-- colspan : Étend une cellule sur 2 colonnes -->
+            <th colspan="2">En-tête du Tableau</th>
+        </tr>
+        <tr>
+            <td>Ligne 1, Colonne 1</td>
+            <td>Ligne 1, Colonne 2</td>
+        </tr>
+        <tr>
+            <!-- rowspan : Étend une cellule sur 2 lignes -->
+            <td rowspan="2">Ligne 2 et 3, Colonne 1</td>
+            <td>Ligne 2, Colonne 2</td>
+        </tr>
+        <tr>
+            <td>Ligne 3, Colonne 2</td>
+        </tr>
+    </table>
+
+    <!-- 
+        Explications des attributs :
+        - border : Spécifie l'épaisseur de la bordure du tableau.
+        - cellspacing : Définit l'espace entre les cellules du tableau.
+        - cellpadding : Définit l'espace entre le contenu des cellules et leur bordure.
+        - colspan : Fusionne plusieurs colonnes en une seule.
+        - rowspan : Fusionne plusieurs lignes en une seule.
+    -->
+
+</body>
+</html>
