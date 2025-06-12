@@ -1,1 +1,0 @@
-Écrire une fonction en JavaScript qui prend en entrée un tableau de nombres et renvoie le plus grand nombre de ce tableau.

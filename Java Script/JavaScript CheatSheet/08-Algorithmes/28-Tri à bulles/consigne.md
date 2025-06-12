@@ -1,1 +1,0 @@
-Implémentez une fonction en JavaScript qui effectue le tri à bulles sur un tableau d'entiers. Le tri à bulles fonctionne en comparant successivement les éléments adjacents et en les échangeant s'ils ne sont pas dans le bon ordre.

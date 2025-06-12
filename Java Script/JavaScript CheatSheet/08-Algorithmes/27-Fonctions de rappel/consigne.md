@@ -1,1 +1,0 @@
-Écrivez une fonction qui prend un tableau et une fonction de rappel en entrée, puis applique cette fonction à chaque élément du tableau.

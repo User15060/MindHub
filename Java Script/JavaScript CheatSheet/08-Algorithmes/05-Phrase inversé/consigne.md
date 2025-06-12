@@ -1,1 +1,0 @@
-Écrire une fonction en JavaScript qui prend en entrée une phrase sous forme de chaîne de caractères et renvoie une nouvelle phrase où l'ordre des mots est inversé.

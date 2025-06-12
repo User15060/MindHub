@@ -1,1 +1,0 @@
-Écrire une fonction en JavaScript qui prend en entrée deux tableaux triés par ordre croissant et renvoie un nouveau tableau qui est la fusion des deux tableaux tout en maintenant l'ordre croissant.

@@ -1,1 +1,0 @@
- Écrivez une fonction en JavaScript qui prend deux nombres en entrée et renvoie leur Plus Grand Commun Diviseur (PGCD).

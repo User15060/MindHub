@@ -1,1 +1,0 @@
-Écrivez une fonction en JavaScript qui prend en entrée un tableau de valeurs et renvoie un nouveau tableau sans doublons, c'est-à-dire un tableau où chaque valeur apparaît une seule fois.

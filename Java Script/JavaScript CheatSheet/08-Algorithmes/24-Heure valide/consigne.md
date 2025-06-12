@@ -1,1 +1,0 @@
-Écrivez une fonction en JavaScript qui prend en entrée une heure, minute et seconde, et vérifie si l'heure est valide. Assurez-vous que l'heure est comprise entre 0 et 23, que les minutes et les secondes sont comprises entre 0 et 59.

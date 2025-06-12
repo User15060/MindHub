@@ -1,1 +1,0 @@
-Écrire une fonction en JavaScript qui prend en entrée un tableau d'éléments et renvoie un objet indiquant le nombre d'occurrences de chaque élément dans le tableau.
