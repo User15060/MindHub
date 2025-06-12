@@ -1,0 +1,67 @@
+<!-- 
+    Définition : 
+    Les listes en HTML permettent de structurer des éléments similaires de façon organisée.
+    Il existe plusieurs types de listes :
+    - Liste Non Ordonnée (<ul>) : Éléments avec des puces.
+    - Liste Ordonnée (<ol>) : Éléments numérotés.
+    - Liste De Définitions (<dl>) : Associe termes (<dt>) et descriptions (<dd>).
+    Les listes peuvent être imbriquées les unes dans les autres pour créer des structures complexes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listes en HTML</title>
+</head>
+<body>
+
+    <!-- LISTE NON ORDONNÉE : Éléments avec puces -->
+    <ul>
+        <li>Lait</li>
+        <li>Pain</li>
+        <li>Œufs</li>
+        <li>Savon</li>
+    </ul>
+
+    <!-- LISTE ORDONNÉE : Éléments numérotés -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <!-- LISTE DE DÉFINITIONS : Terme et description -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Langage de balisage utilisé pour créer des pages web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Feuilles de style en cascade, pour la mise en forme des pages.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Langage de programmation pour le web.</dd>
+    </dl>
+
+    <!-- LISTES IMBRIQUÉES : Listes à l’intérieur d’autres listes -->
+    <ul>
+        <li>Fruits
+            <ol>
+                <li>Pomme</li>
+                <li>Banane
+                    <ul>
+                        <li>Banane jaune</li>
+                        <li>Banane verte</li>
+                    </ul>
+                </li>
+                <li>Orange</li>
+            </ol>
+        </li>
+        <li>Légumes</li>
+        <li>Produits laitiers</li>
+    </ul>
+
+</body>
+</html>
