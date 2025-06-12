@@ -1,0 +1,48 @@
+<!-- 
+    Définition :
+    Le CSS (Cascading Style Sheets) permet de styliser le contenu HTML.
+    Il existe plusieurs façons d’intégrer du CSS dans une page HTML : en ligne (inline), interne (dans la balise <style>), et externe (fichier .css séparé).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Intégration du CSS en HTML</title>
+
+    <!-- Intégration CSS externe : fichier CSS séparé -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Intégration CSS interne : dans la balise <style> -->
+    <style>
+        h1 {
+            color: blue;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intégration CSS en ligne (inline) directement sur la balise -->
+    <h1 style="color: red; font-size: 36px;">Titre Principal</h1>
+
+    <p style="font-size: 20px; color: green;">Ceci est un paragraphe stylisé en ligne.</p>
+
+    <p>Paragraphe avec style interne (défini dans la balise &lt;style&gt;).</p>
+
+    
+    <!-- Explications supplémentaires :
+        - CSS Inline : Utilisé directement dans la balise HTML via l'attribut "style". Prioritaire mais à éviter pour du code propre.
+        - CSS Interne : Placé dans la balise <style> du fichier HTML. Utile pour de petites pages ou tests.
+        - CSS Externe : Meilleure pratique. Le code CSS est placé dans un fichier séparé (.css) et lié avec <link>. Facilite la maintenance et le partage des styles.
+    -->
+
+</body>
+</html>
