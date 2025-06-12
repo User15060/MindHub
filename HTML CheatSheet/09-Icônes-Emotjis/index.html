@@ -1,0 +1,52 @@
+<!-- 
+    Définition Générale :
+    Les entités HTML, les émojis et les bibliothèques d’icônes permettent d’enrichir visuellement le contenu.
+    Ils sont souvent utilisés pour des symboles spéciaux, des caractères spéciaux et des illustrations légères.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Intégration de Font Awesome (bibliothèque d'icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Icônes & Émojis en HTML</title>
+</head>
+<body>
+
+    <!-- ENTITÉS HTML -->
+    <!-- Utilisées pour afficher des caractères spéciaux qui pourraient sinon être interprétés par le navigateur comme du code HTML -->
+    <p>&copy; : Symbole Copyright</p>
+    <p>&yen; : Symbole Yen (monnaie japonaise)</p>
+    <p>&euro; : Symbole Euro</p>
+    <p>&lt; : Symbole inférieur ("<")</p>
+    <p>&gt; : Symbole supérieur (">")</p>
+    <p>&amp; : Symbole esperluette ("&")</p>
+
+
+    <!-- EMOJIS -->
+    <!-- Utilisation directe des émojis Unicode -->
+    <p>😁 : Emoji Sourire Large</p>
+    <p>🙂 : Emoji Sourire Léger</p>
+    <p>🚀 : Emoji Fusée</p>
+    <p>❤️ : Emoji Cœur Rouge</p>
+
+
+    <!-- ICÔNES AVEC FONT AWESOME -->
+    <!-- Bibliothèque externe qui fournit de nombreuses icônes vectorielles -->
+    <p><i class="fa-solid fa-plane"></i> : Icône Avion</p>
+    <p><i class="fa-solid fa-house"></i> : Icône Maison</p>
+    <p><i class="fa-solid fa-phone"></i> : Icône Téléphone</p>
+    <p><i class="fa-solid fa-envelope"></i> : Icône Courrier</p>
+
+    <!-- Explications supplémentaires :
+        - <i> : Balise utilisée ici pour intégrer les icônes de Font Awesome (i = icon, mais peut être remplacé par <span> également).
+        - class="fa-solid fa-plane" : Appelle l'icône souhaitée (ici un avion).
+        - Font Awesome : Bibliothèque externe qu’il faut d’abord intégrer via <link> pour utiliser les classes d’icônes.
+    -->
+
+</body>
+</html>
