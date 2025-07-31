@@ -1,0 +1,59 @@
+.md-card {
+  display: flex;               
+  align-items: center;         
+  gap: 15px;
+  font-size: 0.9rem;                  
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: inherit;
+  text-decoration: none;
+}
+
+.md-card:hover {
+  box-shadow: 0 8px 20px rgba(146, 11, 11, 0.3);
+  transform: translateY(-6px);
+}
+
+.grid.cards {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem;
+}
+
+
+.html-icon {
+  color: #E34F26;
+  font-size: 40px;
+}
+
+.css-icon {
+  color: #2965f1;
+  font-size: 40px;
+}
+
+.js-icon {
+  color: #f0db4f;
+  font-size: 40px;
+}
+
+.c-icon {
+  color: #00599C;
+  font-size: 40px;
+}
+
+.cpp-icon {
+  color: #004482;
+  font-size: 40px;
+}
+
+.csharp-icon {
+  color: #239120;
+  font-size: 40px;
+}
+
+.python-icon {
+  color: #306998;
+  font-size: 40px;
+}

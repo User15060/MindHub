@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://User15060.github.io/MindHub/</loc>
+         <loc>https://ton-site.com/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/About%20Us/about/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/main/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/C/c/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/CSS/css/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/CSharp/csharp/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/Cpp/cpp/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/HTML/html/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/HTML/test1/test1/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/HTML/test2/test2/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/JavaScript/javascript/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/CheatsSheet/Python/python/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/Contact/contact/</loc>
+         <lastmod>2025-07-31</lastmod>
+    </url>
+    <url>
+         <loc>https://ton-site.com/Home/home/</loc>
          <lastmod>2025-07-31</lastmod>
     </url>
 </urlset>
