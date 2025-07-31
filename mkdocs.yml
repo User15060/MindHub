@@ -3,3 +3,92 @@ theme:
   name: material
 repo_url: https://github.com/User15060/MindHub
 site_url: https://User15060.github.io/MindHub/
+
+site_name: MindHub
+site_author: User15060
+site_url: https://ton-site.com  # à remplacer si tu publies
+site_description: MindHub offers free cheatsheets across multiple domains
+
+repo_url: https://github.com/User15060/MindHub
+repo_name: MindHub
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections        # pour la sidebar avec sections dépliables
+    - navigation.expand          # pour que les sections restent ouvertes quand on navigue
+    #- toc.integrate             # intègre la table des matières dans la sidebar
+    - toc.follow                # la TOC suit le scroll sur la page
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+
+  palette:
+  # Button LightMode
+  - scheme: default
+    primary: blue grey
+    accent: deep purple
+    toggle:
+      icon: material/weather-night
+      name: DarkMode
+  # Button DarktMode
+  - scheme: slate
+    primary: deep purple
+    accent: blue grey
+    toggle:
+      icon: material/weather-sunny
+      name: LightMode
+
+  icon:
+    logo: material/book
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: Home/home.md
+  - CheatsSheet:
+    - CheatsSheet/main.md
+    - 'HTML': CheatsSheet/HTML/html.md
+  - Contact: Contact/contact.md
+  - About Us: About Us/about.md
+
+# not_in_nav: 
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tasklist
+  - pymdownx.arithmatex
+  - pymdownx.snippets
+
+plugins:
+  - search
+
+extra_css:
+  - StylesSheet/styleMain.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/User15060/MindHub
+
