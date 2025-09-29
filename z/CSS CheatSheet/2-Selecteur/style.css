@@ -1,0 +1,164 @@
+/* ============================
+   RÉSUMÉ CSS - SÉLECTEURS
+   ============================ */
+
+/* 1️⃣ Sélecteurs de base */
+
+/* Type (élément)
+   Cible tous les éléments d’un type donné */
+p {
+    color: orange;
+}
+
+/* Classe (.)
+   Cible tous les éléments ayant une classe spécifique */
+.product {
+    border: 1px solid gray;
+}
+
+/* ID (#)
+   Cible un élément unique avec un identifiant */
+#main-title {
+    font-size: 24px;
+}
+
+/* 2️⃣ Sélecteurs de hiérarchie */
+
+/* Descendant (espace)
+   Cible tous les éléments descendants d’un parent */
+.shop p {
+    color: blue;
+}
+
+/* Enfant direct (>)
+   Cible uniquement les enfants directs */
+.shop > .product {
+    padding: 10px;
+}
+
+/* Frère adjacent (+)
+   Cible l’élément directement suivant */
+.featured + .product {
+    background-color: lightyellow; /* exemple : produit juste après un featured */
+}
+
+/* Frères généraux (~)
+   Cible tous les éléments suivants au même niveau */
+.featured ~ .product {
+    border-left: 2px dashed red; /* tous les produits après un featured */
+}
+
+/* 3️⃣ Sélecteurs d’attributs */
+
+/* Présence d’attribut */
+[for] {
+    font-weight: bold;
+}
+
+/* Valeur exacte */
+label[for="email"] {
+    color: green;
+}
+
+/* Commence par (^=) */
+input[name^="user"] {
+    border: 1px solid blue;
+}
+
+/* Se termine par ($=) */
+input[name$="name"] {
+    background-color: yellow;
+}
+
+/* Contient (*=) */
+input[name*="mail"] {
+    font-size: 18px;
+}
+
+/* 4️⃣ Pseudo-classes */
+
+/* :first-child
+   Premier enfant d’un parent */
+.shop > .product:first-child {
+    outline: 2px solid red; /* Produit A */
+}
+
+/* :last-child
+   Dernier enfant d’un parent */
+.shop > .product:last-child {
+    outline: 2px solid green; /* Produit D */
+}
+
+/* :only-child
+   Enfant unique */
+div > :only-child {
+    font-style: italic;
+}
+
+/* :nth-child(n)
+   Cible le n-ième enfant du parent */
+.product:nth-child(2) {
+    color: red; /* Produit B */
+}
+
+/* :nth-last-child(n)
+   Cible le n-ième enfant en partant de la fin */
+.product:nth-last-child(2) {
+    color: blue; /* Produit C */
+}
+
+/* :nth-of-type(n)
+   Cible le n-ième élément du même type */
+.shop > .product:nth-of-type(2) {
+    font-weight: bold; /* Produit B */
+}
+
+/* :only-of-type
+   Seul élément de son type */
+p:only-of-type {
+    font-size: 20px;
+}
+
+/* :empty
+   Élément sans contenu */
+div:empty {
+    display: none;
+}
+
+/* :not()
+   Exclut les éléments correspondant au sélecteur */
+.product:not(.featured) {
+    background-color: lightgray; /* Produit B et D */
+}
+
+/* 5️⃣ Pseudo-éléments */
+
+/* ::before / ::after
+   Ajoute du contenu avant ou après un élément */
+p::before {
+    content: "→ ";
+}
+
+/* 6️⃣ Priorité CSS */
+
+/* Spécificité : Élément < Classe < ID < !important */
+p {
+    color: red !important; /* priorité maximale */
+}
+
+/* 7️⃣ Exemple complet pour ton HTML de produits */
+
+/* Cibler tous les produits sauf ceux avec .featured */
+.product:not(.featured) {
+    background-color: #f0f0f0;
+}
+
+/* Changer la couleur du titre des produits après un produit featured */
+.featured + .product h2 {
+    color: darkorange;
+}
+
+/* Cibler les prix supérieurs à $200 (Produit D dans cet exemple) */
+.product:nth-child(n+4) .price {
+    color: red;
+}

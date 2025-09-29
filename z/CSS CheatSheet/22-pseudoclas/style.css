@@ -1,0 +1,87 @@
+:root
+{
+    font-size: 20px;
+}
+
+.box
+{
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    margin-bottom: 1rem;
+}
+
+/* active = quand j'appye sur element sans relacher*/
+.box:active
+{
+    background: crimson;
+}
+
+/*hover = quand je survole un element*/
+.box:hover
+{
+    background: green;
+}
+
+/*selectionne premiere lettre de la phrase*/
+h1:first-letter
+{
+    color: orange;
+}
+
+/* focus = quand je focus mon input*/
+input:focus
+{
+    background-color: red;
+}
+
+/* checked fonctionne avec les type checkbox*/
+input:checked
+{
+    width: 200px;
+    height: 200px;
+}
+
+/* visited; j'ai visité un lien*/
+a:visited
+{
+    color: green;
+}
+
+/* nth-child: selectionner un enfant odd-> impaire even-> pair*/
+li:nth-child(2)
+{
+    color: orange;
+}
+
+/* last-child: selectionner le dernier enfant*/
+li:last-child
+{
+    color: rgb(20, 150, 113);
+}
+
+/* first-child: selectionner le premier enfant*/
+li:first-child
+{
+    color: rgb(19, 29, 228);
+}
+
+li:not(p)
+{
+    color: #333;
+}
+
+.item:nth-of-type(2n+1)
+{
+    color: orange;
+}
+
+#valide:valid
+{
+    background: rgb(76,247,33);
+}
+
+#valide:invalid
+{
+    background: violet;
+}

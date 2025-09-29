@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <main class="mainContainer">
+        <h1>POKEDEX</h1>
+
+        <form onsubmit="searchPokemon(event)">
+            <input
+                type="text"
+                id="textId"
+                name="pokemon"
+                placeholder="Enter your Pokemon"
+                required
+            />
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cardPokemon">
+            <h2 id="namePokemon" class="namePokemon">Search Pokemon</h2>
+
+            <div class="imagePokemonContainer">
+                <img src="/04-Pokedex/Ressource/Pokedex_Pokemon.png" alt="Pokemon Image" id="imagePokemon" class="imagePokemon" />
+            </div>
+
+            <p id="idPokemon" class="idPokemon"></p>
+            <p id="typePokemon" class="typePokemon"></p>
+            <div id="statPokemon" class="statPokemon"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

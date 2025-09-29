@@ -1,0 +1,110 @@
+<!-- 
+    Définition :
+    Les balises <input> permettent de créer différents types de champs de saisie.
+    L'attribut "type" détermine le comportement de l'input.
+    Les attributs "size" et "maxlength" permettent de limiter l'affichage et la longueur des saisies.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs en HTML</title>
+</head>
+<body>
+
+    <!-- Champ de texte simple -->
+    <input type="text" name="nom" size="30" maxlength="50" placeholder="Votre nom">
+    <!-- Size : Largeur d'affichage en nombre de caractères. -->
+    <!-- Maxlength : Limite maximale du nombre de caractères saisis. -->
+
+    
+    <!-- Champ de mot de passe (caché) -->
+    <input type="password" name="motdepasse" size="30" maxlength="30" placeholder="Votre mot de passe">
+
+
+    <!-- Case à cocher -->
+    <input type="checkbox" name="couleur" value="rouge"> Rouge
+    <!-- Permet de sélectionner plusieurs options. -->
+
+
+    <!-- Bouton radio -->
+    <input type="radio" name="sexe" value="homme"> Homme
+    <input type="radio" name="sexe" value="femme"> Femme
+    <!-- Ne permet de sélectionner qu'une seule option dans un groupe. -->
+
+
+    <!-- Téléversement de fichier -->
+    <input type="file" name="fichier">
+    <!-- Permet à l'utilisateur de charger un fichier. -->
+
+
+    <!-- Champ e-mail -->
+    <input type="email" name="email" placeholder="Votre e-mail">
+    <!-- Vérifie que l'adresse mail est valide. -->
+
+
+    <!-- Champ URL -->
+    <input type="url" name="siteweb" placeholder="Votre site web">
+    <!-- Vérifie que l'URL est bien formée. -->
+
+
+    <!-- Champ téléphone -->
+    <input type="tel" name="telephone" placeholder="Votre numéro de téléphone">
+    <!-- Champ spécifique pour numéro de téléphone. -->
+
+
+    <!-- Champ couleur -->
+    <input type="color" name="couleur-preferee">
+    <!-- Ouvre un sélecteur de couleur. -->
+
+
+    <!-- Champ date -->
+    <input type="date" name="date-naissance">
+    <!-- Permet de choisir une date via calendrier. -->
+
+
+    <!-- Champ heure -->
+    <input type="time" name="heure-rendezvous">
+    <!-- Permet de saisir une heure. -->
+
+
+    <!-- Champ semaine -->
+    <input type="week" name="semaine">
+    <!-- Permet de sélectionner une semaine. -->
+
+
+    <!-- Champ mois -->
+    <input type="month" name="mois">
+    <!-- Permet de sélectionner un mois. -->
+
+
+    <!-- Champ recherche -->
+    <input type="search" name="recherche" placeholder="Rechercher...">
+    <!-- Champ optimisé pour les recherches. -->
+
+
+    <!-- Champ numérique -->
+    <input type="number" name="quantite" min="0" max="100" step="1" placeholder="Quantité">
+    <!-- Min : Valeur minimale. -->
+    <!-- Max : Valeur maximale. -->
+    <!-- Step : Intervalle de l'incrémentation. -->
+
+
+    <!-- Bouton d'envoi de formulaire -->
+    <input type="submit" value="Envoyer">
+    <!-- Permet de soumettre le formulaire. -->
+
+
+    <!-- Bouton pour réinitialiser le formulaire -->
+    <input type="reset" value="Réinitialiser">
+    <!-- Remet tous les champs à zéro. -->
+
+
+    <!-- Bouton simple sans soumission -->
+    <input type="button" value="Cliquer ici" onclick="alert('Vous avez cliqué !')">
+    <!-- Déclenche une action via JavaScript. -->
+
+</body>
+</html>

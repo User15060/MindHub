@@ -1,4 +1,3 @@
-# CheatSheet Développement Web
 
 Bienvenue sur ton CheatSheet Développement Web — ta référence rapide pour tout ce qui touche au HTML, CSS, JavaScript, et plus encore !
 

@@ -1,0 +1,103 @@
+<!-- 
+    Définition : 
+    Les balises HTML structurent une page web. 
+    Certaines balises sont des conteneurs (ouvrantes et fermantes), d'autres sont auto-fermantes.
+    Elles servent à organiser le contenu, définir la mise en forme, les liens, les images, etc.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balises en HTML</title>
+</head>
+
+<body>
+    <!-- Texte simple dans un paragraphe -->
+    <p>Je suis du texte</p>
+    
+    <!-- Texte en ligne, sans saut de ligne -->
+    <span>Je suis du texte</span>
+    
+    <!-- Exemple de texte dans un paragraphe avec un span à l'intérieur -->
+    <p>Je suis du <span>Texte</span></p>
+
+    <!-- Titres (Headings) : h1 à h6, du plus important au moins important -->
+    <h1>Je suis un titre</h1>
+    <h2>Je suis un titre</h2>
+    <h3>Je suis un titre</h3>
+    <h4>Je suis un titre</h4>
+    <h5>Je suis un titre</h5>
+    <h6>Je suis un titre</h6>
+
+
+    <!-- Balises de structure : Regroupent et organisent le contenu -->
+
+    <!-- Div : Conteneur générique pour regrouper des éléments -->
+    <div>
+        <p>Je suis du texte</p>
+    </div>
+
+    <!-- Section : Section thématique de contenu -->
+    <section></section>
+
+    <!-- Navigation : Regroupe des liens de navigation -->
+    <nav></nav>
+
+    <!-- Footer : Pied de page, souvent pour les infos de copyright -->
+    <footer></footer>
+
+    <!-- Article : Contenu autonome, comme un article de blog -->
+    <article></article>
+
+    <!-- Main : Contenu principal de la page -->
+    <main></main>
+
+    <!-- Header : En-tête de page ou de section -->
+    <header></header>
+
+    <!-- Bouton cliquable -->
+    <button>Je suis un bouton</button>
+
+    <!-- Summary : Résumé visible dans un élément <details> -->
+    <summary></summary>
+
+    <!-- Details : Permet de déployer un élement-->
+     <details>
+        <summary>Je suis un résumé</summary>
+        <p>Je suis du texte à l'intérieur de details</p>
+     </details>
+
+    <!-- Texte préformaté (espaces et sauts de ligne respectés) -->
+    <pre>
+        je suis
+        du texte
+        préformaté
+    </pre>
+
+    <!-- Lien hypertexte -->
+    <a href="#">Je suis un lien</a>
+
+    <!-- Template : contenu non affiché tant qu'il n'est pas inséré via JS -->
+    <template id="mon-template">
+        <div class="carte">
+            <h2>Titre du template</h2>
+            <p>Texte à l'intérieur du template</p>
+        </div>
+    </template>
+
+
+    <!-- Balises auto-fermantes : Ne nécessitent pas de fermeture -->
+
+    <!-- Image -->
+    <img src="" alt="Description de l'image">
+
+    <!-- Saut de ligne -->
+    <br>
+
+    <!-- Ligne horizontale de séparation -->
+    <hr>
+
+</body>
+</html>

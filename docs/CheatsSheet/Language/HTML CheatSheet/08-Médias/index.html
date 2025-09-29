@@ -1,0 +1,95 @@
+<!-- 
+    Définition :
+    Les balises de médias permettent d'intégrer des images, des vidéos, des audios et du contenu adaptable (responsive).
+    Elles permettent d’enrichir le contenu visuel et sonore de la page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias en HTML</title>
+</head>
+<body>
+
+    <!-- IMAGE -->
+
+    <!-- Balise <img> : Permet d'afficher une image. -->
+    <img src="chemin/vers/image.jpg" alt="Description de l'image" width="400" height="300" title="Texte au survol" loading="lazy" decoding="async">
+
+    <!-- Explications des attributs :
+        - src : Spécifie le chemin de l'image.
+        - alt : Texte alternatif (important pour l'accessibilité et le SEO).
+        - width / height : Dimensions de l’image en pixels.
+        - title : Texte affiché au survol de l’image.
+        - loading : Gestion du chargement ("lazy" = différé ; "eager" = immédiat).
+        - decoding : Contrôle le décodage de l’image ("async" = asynchrone pour de meilleures performances).
+    -->
+
+
+    <!-- VIDEO -->
+
+    <!-- Balise <video> : Permet d'intégrer une vidéo. -->
+    <video controls autoplay muted loop poster="chemin/vers/poster.jpg" width="400">
+        <source src="chemin/vers/video.mp4" type="video/mp4">
+        <source src="chemin/vers/video.webm" type="video/webm">
+        Votre navigateur ne supporte pas la balise vidéo.
+    </video>
+
+    <!-- Explications des attributs :
+        - controls : Affiche les boutons de lecture (play, pause...).
+        - autoplay : Démarre automatiquement la lecture.
+        - muted : Démarre sans le son (obligatoire pour autoplay dans certains navigateurs).
+        - loop : Redémarre la vidéo en boucle.
+        - poster : Image affichée avant que la vidéo ne commence.
+        - width : Largeur de la vidéo.
+        - source : Chemin vers les différents formats vidéos compatibles.
+        - type : Spécifie le format de la vidéo.
+    -->
+
+
+    <!-- AUDIO -->
+
+    <!-- Balise <audio> : Permet d'intégrer un son. -->
+    <audio controls autoplay loop muted preload="auto">
+        <source src="chemin/vers/audio.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas la balise audio.
+    </audio>
+
+    <!-- Explications des attributs :
+        - controls : Affiche les boutons de contrôle audio.
+        - autoplay : Démarre automatiquement la lecture.
+        - loop : Joue en boucle.
+        - muted : Lecture sans son.
+        - preload : Préchargement ("none" = aucun, "metadata" = info du fichier, "auto" = précharger totalement).
+        - source : Chemin du fichier audio.
+        - type : Format de l'audio ("audio/mpeg", "audio/ogg", "audio/wav").
+    -->
+
+
+    <!-- FIGURE & PICTURE -->
+
+    <!-- Balise <figure> : Sert à regrouper un média et sa légende. -->
+    <figure>
+        <!-- Balise <picture> : Permet d’adapter l’image selon les écrans (responsive). -->
+        <picture>
+            <source media="(min-width: 992px)" srcset="chemin/vers/image-grande.png" type="image/png">
+            <source media="(min-width: 552px)" srcset="chemin/vers/image-moyenne.png" type="image/png">
+            <img src="chemin/vers/image-default.png" alt="Image alternative">
+        </picture>
+        <figcaption>Je suis une description de l'image (figcaption).</figcaption>
+    </figure>
+
+    <!-- Explications :
+        - <figure> : Enveloppe l’image et sa légende.
+        - <picture> : Sélectionne l’image la plus adaptée selon la taille d’écran.
+        - <source> : Déclare chaque version de l’image avec sa condition (media queries).
+        - <img> : Image de secours par défaut.
+        - <figcaption> : Légende associée à l’image.
+    -->
+
+</body>
+</html>
+
+<!-- Astuce SEO : Pensez à compresser les images pour améliorer la vitesse de chargement. -->

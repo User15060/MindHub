@@ -1,0 +1,35 @@
+span
+{
+    display: inline-block; /* ou block*/
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+}
+
+h1
+{
+    background: violet;
+    display: inline;
+}
+
+.box
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(54, 183, 22);
+    display: flex;
+    display: grid;
+    display: table;
+    display: none;
+}
+
+.box2
+{
+    background-color: salmon;
+    display: inline-block;
+    display: inline-flex;
+    display: inline-grid;
+    display: inline-table; 
+    display: inherit;
+    
+}

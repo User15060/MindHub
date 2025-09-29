@@ -1,0 +1,42 @@
+<!-- 
+    Définition :
+    JavaScript permet d’ajouter de l’interactivité et du dynamisme à une page HTML.
+    Il peut être intégré directement dans le fichier HTML ou relié à un fichier externe.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intégration du JavaScript en HTML</title>
+
+    <!-- Exemple moderne : JS externe avec defer dans le head
+         - Téléchargé en parallèle avec le HTML
+         - Exécuté seulement après que le HTML soit entièrement analysé
+         - Ne bloque pas le chargement de la page -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Titre Principal</h1>
+    <p>Paragraphe simple</p>
+
+    <!-- Intégration JavaScript Interne : Via la balise <script> -->
+    <script>
+        // Ceci est un commentaire JS
+        alert("Bonjour !");
+        console.log("Message affiché dans la console du navigateur");
+    </script>
+
+    <!-- Intégration JavaScript Externe : Via un fichier séparé (ancienne bonne pratique : placé en bas du body) -->
+    <script src="D-app.js"></script>
+
+    <!-- Explications supplémentaires :
+         - JS Interne : Le code est directement écrit dans la balise <script> au sein du fichier HTML.
+         - JS Externe (ancienne méthode) : Placer le <script> à la fin du body pour attendre le chargement de la page.
+         - JS Externe moderne : Utiliser defer dans le head pour un chargement en parallèle et une exécution après parsing du HTML.
+    -->
+
+</body>
+</html>

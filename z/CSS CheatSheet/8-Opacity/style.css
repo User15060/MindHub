@@ -1,0 +1,14 @@
+p
+{
+    width: 300px;
+    height: 80px;
+    background-color: orange;
+}
+
+.txt
+{
+    /*display: none; /* none disparait du flue*/
+    /*visibility: hidden; disparait mais rest dans le flux*/
+    /*opacity: 0; disparait mais reste dans le flux*/
+    opacity:0;
+}

@@ -1,0 +1,38 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    background: no-repeat center / cover url("./src/img01.jpg");
+}
+
+h1
+{
+    color: blue;
+}
+
+div
+{
+    transform: translate(10px, 200px);
+}
+
+p span
+{
+    color: rgb(158, 26, 48);
+}
+
+button
+{
+    color: white;
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover
+{
+    background-color: rgb(85, 85, 200);
+}

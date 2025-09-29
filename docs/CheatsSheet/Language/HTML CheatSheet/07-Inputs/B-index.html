@@ -1,0 +1,71 @@
+<!-- 
+    Définition :
+    Les attributs permettent de définir le comportement et l'apparence des balises <input>.
+    Chaque type d'attribut modifie la manière dont l'utilisateur interagit avec le formulaire.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributs Inputs en HTML</title>
+</head>
+<body>
+
+    <!-- Attributs sur les champs texte -->
+    
+    <!-- Disabled : Rend le champ non modifiable (désactivé). -->
+    <input type="text" disabled placeholder="Champ désactivé">
+
+    <!-- Autocomplete : Permet à la saisie de se remplir automatiquement selon l'historique. -->
+    <input type="text" autocomplete="on" placeholder="Avec autocomplétion">
+
+    <!-- Name : Nom utilisé lors de l’envoi des données (clé du champ). -->
+    <input type="text" name="prenom" placeholder="Votre prénom">
+
+    <!-- Value : Valeur pré-remplie du champ. -->
+    <input type="text" value="Message par défaut">
+
+    <!-- Placeholder : Texte indicatif affiché tant que rien n'est saisi. -->
+    <input type="text" placeholder="Je suis une indication">
+
+    <!-- Required : Champ obligatoire (empêche l’envoi vide). -->
+    <input type="text" required placeholder="Champ requis">
+
+
+    <!-- Attributs sur les CheckBox et Radio -->
+
+    <!-- Checkbox checked : Par défaut cochée. -->
+    <input type="checkbox" checked> 
+    <input type="checkbox">         
+
+    <!-- Radio checked : Par défaut sélectionné. -->
+    <input type="radio" name="Homme" checked>
+    <input type="radio" name="Femme"> 
+
+
+    <!-- Attributs sur les Range et Number -->
+
+    <!-- Range : Barre de sélection avec valeur minimale et maximale. -->
+    <input type="range" min="0" max="100" value="50">
+
+    <!-- Number : Saisie numérique avec limites. -->
+    <input type="number" min="0" max="20" value="8">
+
+
+    <!-- Attributs sur les Files -->
+
+    <!-- Multiple : Permet de sélectionner plusieurs fichiers. -->
+    <input type="file" multiple>
+
+    <!-- Capture : Active la caméra ou le micro selon le type de fichier. -->
+    <input type="file" capture>
+
+    <!-- Input image (rare) : Permet de soumettre un formulaire via une image cliquable. -->
+    <input type="image" src="chemin/vers/image.png" alt="Bouton image">
+
+</body>
+</html>
+
+<!-- Pour aller plus loin : https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/input -->

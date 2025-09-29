@@ -1,0 +1,92 @@
+🚀 RÉSUMÉ COMPLET EMMET
+
+------------------------------------
+Structure de base
+------------------------------------
+!            -> Génère un document HTML5
+html:5       -> Génère toute la structure HTML5
+
+------------------------------------
+Balises simples
+------------------------------------
+div          -> <div></div>
+section      -> <section></section>
+footer       -> <footer></footer>
+nav          -> <nav></nav>
+ul           -> <ul></ul>
+
+------------------------------------
+Classes et ID
+------------------------------------
+div.box            -> <div class="box"></div>
+div.box.red        -> <div class="box red"></div>
+div#container      -> <div id="container"></div>
+.card              -> <div class="card"></div>
+div#monId.maClasse -> <div id="monId" class="maClasse"></div>
+
+------------------------------------
+Imbrications et relations
+------------------------------------
+div>ul>li      -> Imbrication enfant
+div>p+ul       -> Élément frère (même niveau)
+div>ul>li*3    -> Multiplie li 3 fois
+ul>li.item$*5  -> Indexation (item1, item2, etc.)
+div>ul^p       -> ^ remonte d'un niveau après ul
+section>(header>h1)+footer>p -> Groupement ()
+
+------------------------------------
+Contenu de balise
+------------------------------------
+h1{Titre}     -> <h1>Titre</h1>
+p{Lorem ipsum} -> Texte directement dans l'élément
+
+------------------------------------
+Lorem ipsum
+------------------------------------
+lorem         -> Génère du texte lorem ipsum
+lorem10       -> Génère 10 mots de lorem
+
+------------------------------------
+Attributs
+------------------------------------
+a[href="https://google.fr"]
+input[type="text" placeholder="Nom"]
+
+------------------------------------
+Formulaires
+------------------------------------
+form
+form:get
+form:post
+input:text
+input:password
+input:radio
+input:checkbox
+input:submit
+lab (label)
+
+------------------------------------
+Raccourcis supplémentaires utiles
+------------------------------------
+link:css       -> <link rel="stylesheet" href="style.css">
+script:src     -> <script src=""></script>
+img            -> <img src="" alt="">
+table>tr*3>td*3-> Crée un tableau 3x3
+meta:viewport  -> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+meta:charset   -> <meta charset="UTF-8">
+
+------------------------------------
+SYNTAXE RAPIDE :
+------------------------------------
+>   = enfant
++   = frère
+^   = remonte d'un niveau
+*   = multiplier
+$   = indexation
+{}  = contenu texte
+()  = grouper
+[]  = ajouter des attributs
+
+------------------------------------
+Rappel :
+Emmet fonctionne dans la majorité des éditeurs modernes (VSCode, Sublime, etc.)

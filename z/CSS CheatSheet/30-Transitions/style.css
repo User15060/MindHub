@@ -1,0 +1,22 @@
+.box
+{
+    width: 150px;
+    height: 150px;
+    background: salmon;
+    text-align: center;
+    color: #f1f1f1;
+
+    transition-property: background;
+    transition-duration: 1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+
+    transition: background 0.5s ease-in-out,
+    color 0.5s ease-in-out;
+}
+
+.box:hover
+{
+    background: green;
+    color: black;
+}

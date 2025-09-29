@@ -1,0 +1,40 @@
+.cont
+{
+    width: 400px;
+    height: 200px;
+    perspective: 500px;
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    background: salmon;
+
+    /* Transform Y X
+    transform: translate(20px);
+    transform: translateX(50px);
+    transform: translateY(50px);*/
+
+    /* Transform Deg
+    transform: rotate(30deg);*/
+
+    /* Transform Deformation
+    transform: skew(25deg, 30deg);*/
+
+    /* Transform Ration
+    transform: scale(2);*/
+
+    /*transform: translateX(50px) rotate(30deg) scale(1.2);*/
+
+    transform: translateZ(-100px); /* ou translate3d(0,0,-100px);*/
+    transform: rotate3d(5, -5.0, -2.0, 150deg);
+    transform-origin: bottom right 60px;
+
+    /* matrix */
+    transform: matrix(1.0,2.0,3.0,4.0,5.0,6.0);
+    transform: matrix3d(1,0,0,0,0,1,0,1,0,1,0,1,0); /* Regarder le nombre de chiffre*/
+    
+
+
+}

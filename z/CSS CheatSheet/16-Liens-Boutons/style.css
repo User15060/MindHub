@@ -1,0 +1,22 @@
+a
+{
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+button
+{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}

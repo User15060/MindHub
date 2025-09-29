@@ -1,0 +1,33 @@
+.box
+{
+    width: 500px;
+    height: 500px;
+    background-color: salmon;
+
+    /*
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin: 20px; -> Partout 4coté
+    margin: 20px 50px -> Haut bas / Gauche droite
+    margin: 30px 25px 10px -> Haut /Gauche droite/Bas
+    margin: 10px 10px 10px 10px -> Haut/droite/bas/gauche
+    */
+
+    /*
+    padding-top: 50px
+    ... Idem voir Marging!*/
+}
+
+
+
+/*
+Si un bloc a margin-bottom 80px et celle du bas margin-top 60px. Ca sera toujours la plus grande qui l'emportera.
+margin: 0 auto; -> Permet de centrer le bloc. Idem pour padding => auto.*/
+
+
+/*
+Margin -> Element exterieur à la box
+Padding -> Element intérieur à la box
+*/

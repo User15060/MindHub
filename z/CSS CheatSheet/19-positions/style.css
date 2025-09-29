@@ -1,0 +1,43 @@
+.box
+{
+    width: 250px;
+    height: 250px;
+}
+
+.container
+{
+    height: 500px;
+    background: salmon;
+    position: relative;
+}
+
+.box1
+{
+    background: violet;
+    position: absolute;
+    z-index:2;
+    /*right: 10px;
+    top: 5px;
+    left: 60px;
+    bottom: 20px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.box2
+{
+    background: orange;
+    margin-top: 5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.box3
+{
+    position: fixed;
+    top:50%;
+    left: 3rem;
+    background: rgb(208, 43, 25);
+    width: 50px;
+}

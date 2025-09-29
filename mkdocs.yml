@@ -1,63 +1,56 @@
-site_name: MindHub
-theme:
-  name: material
-repo_url: https://github.com/User15060/MindHub
-site_url: https://User15060.github.io/MindHub/
-
+# Site Web Configuration for MindHub
 site_name: MindHub
 site_author: User15060
-site_url: https://ton-site.com  # à remplacer si tu publies
+site_url: https://User15060.github.io/MindHub/
 site_description: MindHub offers free cheatsheets across multiple domains
-
 repo_url: https://github.com/User15060/MindHub
 repo_name: MindHub
 edit_uri: edit/main/docs/
 
+
+
+# Template and Theme Configuration
 theme:
   name: material
+  logo: assets/MindHub_Logo.png
+  favicon: assets/MindHub_Logo.png
   language: en
   features:
     - navigation.tabs
     - navigation.top
-    - navigation.sections        # pour la sidebar avec sections dépliables
-    - navigation.expand          # pour que les sections restent ouvertes quand on navigue
-    #- toc.integrate             # intègre la table des matières dans la sidebar
-    - toc.follow                # la TOC suit le scroll sur la page
+    - navigation.sections        
+    # - navigation.expand          
+    - toc.follow                
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.code.annotate 
     - content.tabs.link
     - content.action.edit
 
   palette:
-  # Button LightMode
-  - scheme: default
-    primary: blue grey
-    accent: deep purple
-    toggle:
-      icon: material/weather-night
-      name: DarkMode
-  # Button DarktMode
-  - scheme: slate
-    primary: deep purple
-    accent: blue grey
-    toggle:
-      icon: material/weather-sunny
-      name: LightMode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 
   icon:
-    logo: material/book
     repo: fontawesome/brands/github
 
-nav:
-  - Home: Home/home.md
-  - CheatsSheet:
-    - CheatsSheet/main.md
-    - 'HTML': CheatsSheet/HTML/html.md
-  - Contact: Contact/contact.md
-  - About Us: About Us/about.md
-
-# not_in_nav: 
 
 markdown_extensions:
   - admonition
@@ -73,7 +66,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
@@ -81,8 +77,47 @@ markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.snippets
 
+
+nav:
+  - Home: Home/home.md
+  - CheatsSheet:
+      - Introduction: CheatsSheet/main.md
+      - Language:
+          - HTML:
+              - 01-Structure: CheatsSheet/Language/HTML/01-HTML Structure/index.md
+              - 02-Balises: CheatsSheet/Language/HTML/02-Balises/index.md
+              - 03-Exemple:
+                  - Exemple 1: CheatsSheet/Language/HTML/03-Exemple/index1.md
+                  - Exemple 2: CheatsSheet/Language/HTML/03-Exemple/index2.md
+          - CSS: CheatsSheet/Language/CSS/ # (mettre un index.md ou page par défaut)
+  - Contact: Contact/contact.md
+  - About Us: About Us/about.md
+
+
 plugins:
   - search
+  - awesome-pages:
+      collapse_single_pages: true
+      strict: false
+  - minify:
+      minify_html: true
+
+extra_css:
+  - StylesSheet/styleMain.css
+
+# ... (le reste de ta config)
+
+
+
+
+
+plugins:
+  - search
+  - awesome-pages:
+      collapse_single_pages: true
+      strict: false
+  - minify:
+      minify_html: true
 
 extra_css:
   - StylesSheet/styleMain.css

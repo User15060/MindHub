@@ -1,0 +1,25 @@
+p
+{
+    /* COULEUR DE TEXTE */
+    /*Nom de Couleur*/
+    color: green;
+    /* héxadecimal*/
+    color: #333;
+    /*rgb*/
+    color: rgb(0,0,0);
+    /*rgba*/
+    color: rgba(0,0,0,0.8); /*Dernier Chiffre = Oppacité du texte)*/
+    /*hsl*/
+    color: hsl(39, 100%, 50%);
+    /*hwb*/
+    color: hwb(39,0%, 0%);
+
+    /* COULEUR DE FOND */
+    background-color: red;
+    background-color: #ff0000;
+    background-color: hsl(0, 100%, 50%);
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*https://colorable.jxnblk.com*/

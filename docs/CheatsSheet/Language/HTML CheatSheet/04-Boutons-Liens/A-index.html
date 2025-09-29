@@ -1,0 +1,42 @@
+<!-- 
+    Définition : 
+    Les liens (<a>) : Permettent de naviguer vers une autre page ou URL.
+    Les boutons (<button>) : Déclenchent des actions, souvent dans des formulaires.
+    On peut aussi utiliser des éléments comme <div> pour créer des boutons personnalisés (mais sans comportement natif).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutons & Liens en HTML</title>
+</head>
+<body>
+
+    <!-- Liens -->
+
+    <!-- Liens vers une URL externe -->
+    <!-- target="_blank" : ouvre le lien dans un nouvel onglet ou une nouvelle fenêtre. -->
+    <a href="https://google.fr" target="_blank">Accéder à Google</a>
+
+    <!-- Liens vers des pages internes -->
+    <a href="chemin/vers/page.html">Accéder à la page Contact</a>
+    <a href=".chemin/vers/page.html">Accéder à la page Portfolio</a> <!-- Lien vers la page Portfolio dans le dossier "pages" (sous-dossier de la page parente) -->
+
+
+    <!-- Boutons -->
+
+    <!-- type="button" : bouton d'action simple -->
+    <button type="button">Bouton d'action</button>
+
+    <!-- type="submit" : bouton pour soumettre un formulaire -->
+    <button type="submit">Envoyer le message</button>
+
+    <!-- Exemple de bouton personnalisé avec une div (pas recommandé pour accessibilité) -->
+    <div role="button" tabindex="0" style="display:inline-block; padding:5px; background:#ccc; cursor:pointer;">
+        Je suis un bouton div
+    </div>
+
+</body>
+</html>

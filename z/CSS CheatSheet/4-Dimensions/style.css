@@ -1,0 +1,36 @@
+body
+{
+    height: 100vh;
+}
+
+.box
+{
+    background-color: red;
+    /*width: 150px; /*Largeur*/
+    width: 50%;
+    /*height: 150px; /*Hauteur*/
+    height: 50%;
+}
+
+.box1
+{
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    /* max-width-min-width = largeur maximal et minimal*/
+    max-width: 750px;
+    min-width: 500px;
+    /* max-width-min-width = largeur maximal et minimal*/
+    max-height: 750px;
+    min-height: 150px;
+
+}
+
+
+
+
+/*
+Pixel: est une unité absolue 1px sera toujours 1px
+%: Est une unité relative à la largeur d'écran
+vh: Est une unité relative ) la hauteur d'écran de navigation
+*/

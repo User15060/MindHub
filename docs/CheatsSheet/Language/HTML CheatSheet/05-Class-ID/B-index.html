@@ -1,0 +1,62 @@
+<!-- 
+    Définition :
+    En HTML, les balises peuvent contenir d'autres balises.
+    - La balise qui contient est appelée le parent.
+    - La balise à l'intérieur est appelée l'enfant.
+    Cela permet de structurer l'information et organiser le contenu.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent - Enfant en HTML</title>
+</head>
+<body>  
+
+    <!-- Exemple 1 : Navigation -->
+    <nav class="menu-parent">
+        <ul class="menu-liste-enfant">
+            <li class="menu-item-enfant">
+                <a href="#">Lien 1</a>
+            </li>
+            <li class="menu-item-enfant">
+                <a href="#">Lien 2</a>
+            </li>
+            <li class="menu-item-enfant">
+                <a href="#">Lien 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Exemple 2 : Texte simple -->
+    <div class="texte-parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error, omnis perferendis tempora iure quisquam hic nesciunt neque optio eveniet?</p>
+    </div>
+
+    <!-- Exemple 3 : Carte (structure imbriquée) -->
+    <div class="carte-parent">
+        <div class="carte-contenu-enfant">
+            
+            <!-- En-tête de la carte -->
+            <div class="carte-header-enfant">
+                <h2>Titre de la Carte</h2>
+            </div>
+
+            <!-- Corps de la carte -->
+            <div class="carte-body-enfant">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, adipisci.</p>
+
+                <!-- Liste à l'intérieur de la carte -->
+                <ul class="liste-enfant">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

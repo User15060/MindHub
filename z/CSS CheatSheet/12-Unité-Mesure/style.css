@@ -1,0 +1,23 @@
+:root /*Root, taille du navigateur imposé par le fichier css*/
+{
+    font-size: 10px;
+}
+
+.box
+{
+    padding: 10px;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    font-size: 10px;
+}
+
+p
+{
+    font-size: 2rem; /*rem fait referance à la taille de base des navigateur; 16px*/
+    font-size:2em; /*fais reference à la taille des parents*/
+}
+
+/*
+Demande à chatGPT pour pouvoir expliquer chaque unité
+*/

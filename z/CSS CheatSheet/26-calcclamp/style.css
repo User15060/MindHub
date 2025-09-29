@@ -1,0 +1,29 @@
+/* La fonction calc permet de faire des calculs pour déterminer la valeur
+d'une propriété CSS. */
+
+p
+{
+    /*font-size: calc(25px + 2vw - 2px);*/
+    font-size: calc(55px /2);
+}
+
+.box
+{
+    width: calc(100% - 80px);
+    height: 200px;
+    background: salmon;
+}
+
+.box2
+{
+    margin-top: 1rem;
+    /*width: clamp(10px, 4em, 80px);*/
+    width: max(100px, min(14px, 80px));
+}
+
+/*
+La fonction CSS clamp(min, valeur, max) permet de définir une valeur qui est
+contrainte entre une borne minimale (min) et une borne maximale (max), tout en
+utilisant une valeur préférée (valeur). Elle est souvent utilisée pour des
+tailles ou des propriétés qui
+doivent s’adapter de manière fluide tout en restant dans des limites définies.*/

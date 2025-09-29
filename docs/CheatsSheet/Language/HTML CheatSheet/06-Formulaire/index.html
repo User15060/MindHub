@@ -1,0 +1,104 @@
+<!-- 
+    Définition :
+    Un formulaire permet de récupérer des données saisies par l’utilisateur.
+    Il est délimité par la balise <form>.
+    
+    Attributs importants de <form> :
+    - action : URL où seront envoyées les données.
+    - method : Méthode d’envoi (GET ou POST).
+    * GET : Envoie les données dans l’URL (visible, limité).
+    * POST : Envoie les données de façon invisible (recommandé pour données sensibles).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire en HTML</title>
+</head>
+<body>
+
+    <form action="/url-de-destination" method="POST">
+        
+        <!-- Champ texte (nom) -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+        <br><br>
+
+        <!-- Champ texte (prénom) -->
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+        <br><br>
+
+        <!-- Champ e-mail -->
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+        <br><br>
+
+        <!-- Champ numéro de téléphone -->
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone">
+        <br><br>
+
+        <!-- Champ mot de passe -->
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+        <br><br>
+
+        <!-- Champ zone de texte (message) -->
+        <label for="message">Message :</label>
+        <br>
+        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+        <br><br>
+
+        <!-- Champ date -->
+        <label for="date">Date de naissance :</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+        <!-- Liste déroulante (select) -->
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+            <option value="">Sélectionnez votre pays</option>
+            <option value="france">France</option>
+            <option value="belgique">Belgique</option>
+            <option value="suisse">Suisse</option>
+        </select>
+        <br><br>
+
+        <!-- Champ avec datalist -->
+        <label for="ville">Ville :</label>
+        <input list="villes" id="ville" name="ville" placeholder="Votre ville">
+        <datalist id="villes">
+            <option value="Paris">
+            <option value="Bruxelles">
+            <option value="Genève">
+            <option value="Lyon">
+            <option value="Liège">
+        </datalist>
+        <br><br>
+
+        <!-- Case à cocher -->
+        <label>
+            <input type="checkbox" name="newsletter" value="yes">
+            Inscrire à la newsletter
+        </label>
+        <br><br>
+
+        <!-- Bouton de soumission -->
+        <!-- type="submit" : Permet d’envoyer le formulaire au serveur -->
+        <button type="submit">Envoyer</button>
+
+    </form>
+
+</body>
+</html>
+
+<!--
+Chaque champ de saisie a :
+    - Un label (texte d’explication)
+    - Un id (pour lier le label au champ)
+    - Un name (important car c’est la clé qui sera transmise au serveur)
+    - Un placeholder (texte indicatif dans le champ)
+-->
