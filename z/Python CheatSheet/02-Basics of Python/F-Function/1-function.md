@@ -8,6 +8,7 @@ In simple terms:
 * You can call (execute) it whenever you need that recipe.
 * A function can take inputs (**parameters**) and send back a result using **return**.
 
+
 ✅ Example:
 
 ```python
@@ -32,6 +33,7 @@ print(student_report("Alice", [12, 15, 14, 9]))
 print(student_report("Bob", [8, 7, 6]))
 print(student_report("Charlie", []))
 ```
+
 
 📌 Notes:
 

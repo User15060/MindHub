@@ -1,5 +1,3 @@
-# Comments in Python
-
 # This is a comment -> Single-line comment
 
 """

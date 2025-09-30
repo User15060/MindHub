@@ -17,6 +17,7 @@ Conditions are expressions that evaluate to **True** or **False**. They are used
 * `or` : at least one condition must be True
 * `not` : reverses the condition (True → False, False → True)
 
+
 ✅ Example:
 
 ```python

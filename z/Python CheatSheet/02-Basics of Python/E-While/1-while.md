@@ -3,6 +3,7 @@
 A `while` loop repeats a block of code as long as a given condition is **True**.
 It's useful when you don’t know in advance how many times you need to repeat.
 
+
 ✅ Example:
 
 ```python
@@ -19,6 +20,7 @@ while not password == "password":  # Keep asking until correct password
     password = input("Enter password: ")
 print("Access granted!")
 ```
+
 
 📌 Notes:
 

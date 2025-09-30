@@ -7,6 +7,7 @@ In simple terms:
 * It’s like a label on a box that tells you what’s inside.
 * The value inside can change while the program is running.
 
+
 ✅ Example:
 
 ```python
@@ -45,6 +46,7 @@ print(type(age))     # <class 'int'>
 print(type(fruits))  # <class 'list'>
 ```
 
+
 ✅ Operations with variables:
 
 ```python
@@ -54,7 +56,7 @@ print("25" + "1")   # Result: "251"
 # Number addition (int + int)
 print(25 + 1)       # Result: 26
 
-# Global variable example
+# Global variable
 global name  # Variable accessible everywhere in the file
 name = "User"
 
@@ -62,6 +64,7 @@ name = "User"
 print("Hello " + name + ", How are you?")  # Classic
 print(f"Hello {name}")                     # f-string (recommended)
 ```
+
 
 📌 Notes:
 

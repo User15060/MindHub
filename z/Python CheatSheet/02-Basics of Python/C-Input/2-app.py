@@ -6,6 +6,7 @@ age = int(age)
 
 print(f"Hi, my name is {name} and I am {age} years old.")
 
+
 # :Notes:
 """
 input() always returns a string.

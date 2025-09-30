@@ -3,6 +3,7 @@
 The `input()` function allows the program to get input from the user during execution.
 It always returns a **string**, even if the user types numbers.
 
+
 ✅ Example:
 
 ```python
@@ -14,6 +15,7 @@ age = int(age)
 
 print(f"Hi, my name is {name} and I am {age} years old.")
 ```
+
 
 📌 Notes:
 

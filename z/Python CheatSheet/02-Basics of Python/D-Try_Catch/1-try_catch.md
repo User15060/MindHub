@@ -3,6 +3,7 @@
 The `try/except` blocks are used to handle errors gracefully, preventing the program from crashing.
 You put the code that might fail inside **try**, and handle errors inside **except**.
 
+
 ✅ Example:
 
 ```python
@@ -13,6 +14,7 @@ except ValueError:
 else:
     print(f"You are {age} years old.")
 ```
+
 
 📌 Notes:
 
