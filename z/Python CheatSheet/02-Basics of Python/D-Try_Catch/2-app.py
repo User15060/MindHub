@@ -8,7 +8,7 @@ else:
 
 # :Note:
 """
-- The try block contains code that may raise an error.
-- The except block runs only if an error occurs.
-- The else block runs only if no error happened.
+The try block contains code that may raise an error.
+The except block runs only if an error occurs.
+The else block runs only if no error happened.
 """

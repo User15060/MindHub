@@ -61,8 +61,14 @@ global name  # Variable accessible everywhere in the file
 name = "User"
 
 # String concatenation
-print("Hello " + name + ", How are you?")  # Classic
-print(f"Hello {name}")                     # f-string (recommended)
+print("Hello " + name + ", How are you?")   # Classic
+print(f"Hello {name}")                      # f-string (recommended)
+print("Hello {}".format(name))              # format method
+print("Hello %s" % name)                    # old style (not recommended)
+print("Hello", name)                        # comma (adds space automatically)
+
+print("""Put
+      What Ever you want !! """) # Multiline strings
 ```
 
 

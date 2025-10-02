@@ -10,8 +10,8 @@ else: # This block runs if none of the above conditions are True
 
 # :Notes:
 """
-- if checks the first condition.
-- elif (short for *else if*) checks additional conditions if the first one is False.
-- else runs if none of the previous conditions are True.
+if checks the first condition.
+elif (short for *else if*) checks additional conditions if the first one is False.
+else runs if none of the previous conditions are True.
 Only the first **True** block will execute.
 """
